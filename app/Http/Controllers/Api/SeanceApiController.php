@@ -26,6 +26,6 @@ class SeanceApiController extends Controller
 
             return response()->json($this->services->mapping($request->get('date'), $request->get('time')), 200);
         }
-        return response()->json("Not Found", 200);
+        return response()->json("Not Found", 404);
     }
 }

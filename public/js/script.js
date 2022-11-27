@@ -104,7 +104,6 @@ function getTicketInDb() {
         async: false,
         type:'GET',
         success:function(data){
-            console.log(data);
             if(data?.seance?.tickets) {
                 drawNameFilm("Movie title: " + data.seance.name);
                 for (let index in data.seance.tickets) {
